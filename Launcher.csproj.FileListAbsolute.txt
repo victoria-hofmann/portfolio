@@ -1,0 +1,10 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\bin\Debug\Launcher.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\bin\Debug\Launcher.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\bin\Debug\Launcher.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.Form1.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.Properties.Resources.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Launcher\Launcher\obj\Debug\Launcher.pdb
