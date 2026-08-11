@@ -1,0 +1,11 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\bin\Debug\Networking.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\bin\Debug\Networking.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\bin\Debug\Networking.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.DNSLookup.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.MainForm.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.Properties.Resources.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Networking\Networking\obj\Debug\Networking.pdb
