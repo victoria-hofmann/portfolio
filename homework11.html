@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Homework 11 </title>
+    <style type="text/css">
+        td{
+            text-align:center;
+        }
+    </style>
+    <script type="text/javascript">
+        function vCompute() {
+            var iNum1 = document.getElementByName('Num1Menu');
+            var iNum2 = document.getElementByName('Num2Menu');
+
+            
+
+        }
+        </script>
+</head>
+<body>
+    <form id="frmComp">
+        <table style="border:2px solid crimson; background-color:pink; margin-left:auto; margin-right:auto">
+            <tr>
+                <td colspan="3"> Computations </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="Num1Menu">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        <option> 4 </option>
+                        <option> 5 </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" id="cbAdd" /> Add
+                    <br />
+                    <input type="checkbox" id="cbSubtract" /> Subtract
+                    <br />
+                    <input type="checkbox" id="cbMultiply" /> Multiply
+                    <br />
+                    <input type="checkbox" id="cbDivide" /> Divide
+                </td>
+                <td>
+                    <select id="Num2Menu">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        <option> 4 </option>
+                        <option> 5 </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Compute" id="btnCompute" onclick="vCompute()" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="rbComp" name="rbFact" /> Print Entire Fact
+                </td>
+                <td></td>
+                <td>
+                    <input type="radio" id="rbComp" name="rbAnswer" /> Print Only Answer
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea readonly="readonly" cols="60" rows="30" ></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

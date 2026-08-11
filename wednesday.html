@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Wednesday </title>
+    <style type="text/css">
+        td{
+            text-align:center
+        }
+    </style>
+    <script type="text/javascript">
+        var iCount = 1;
+        function vAdd() {
+            document.getElementById('taBox').value = iCount + '. ' + document.getElementById('txt1').value + '\n' + document.getElementById('taBox').value;
+            iCount = iCount+1
+        }
+        function vPrintGreeting(strFirst, strLast) {
+            alert('Hello ' + strFirst + ' ' + strLast)
+        }
+        function vLetterClick(strLetter) {
+            document.getElementById('txtNewBox').value = 'You clicked the letter ' + strLetter
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table style="border:2px solid black; background-color:lavender; margin-left:auto; margin-right:auto">
+            <tr>
+                <td> Text </td>
+                <td>
+                    <input type="text" id="txt1" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" id="btnAdd" value="Add" onclick="vAdd()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="taBox" readonly="readonly" ></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Homework 6 </title>
+    <style type="text/css">
+        td{
+            text-align:center;
+        }
+        input.btn{
+            width:35px
+        }
+    </style>
+    <script type="text/javascript">
+        function vButtonClick(strSymbol) {
+            document.getElementById('txtMessage').value = 'You clicked on a ' + strSymbol + "."
+        }
+    </script>
+</head>
+<body>
+    <form id="frmButtonFun">
+        <table style="border:2px solid black; background-color:magenta">
+            <tr>
+                <td colspan="4"> Button Fun </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btnB" value="B" onclick="vButtonClick('letter')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn1" value="1" onclick="vButtonClick('number')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn$" value="$" onclick="vButtonClick('symbol')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn4" value="4" onclick="vButtonClick('number')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btn!" value="!" onclick="vButtonClick('symbol')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btnZ" value="Z" onclick="vButtonClick('letter')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn3" value="3" onclick="vButtonClick('number')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn@" value="@" onclick="vButtonClick('symbol')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btn%" value="%" onclick="vButtonClick('symbol')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn7" value="7" onclick="vButtonClick('number')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btnK" value="K" onclick="vButtonClick('letter')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn9" value="9" onclick="vButtonClick('number')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btnT" value="T" onclick="vButtonClick('letter')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn?" value="?" onclick="vButtonClick('symbol')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btnJ" value="J" onclick="vButtonClick('letter')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" id="btn5" value="5" onclick="vButtonClick('number')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" >
+                    <input type="text" id="txtMessage" readonly="readonly" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

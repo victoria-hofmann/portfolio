@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Minesweeper </title>
+    <style type="text/css">
+        td{
+            text-align:center;
+        }
+        table{
+            background-color:lightgray;
+            border:2px solid black;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    </style>
+    <script type="text/javascript">
+        var aiValue = new Array(8);
+        var i, j;
+        for (i = 0; i < 8; i++) {
+            aiValue[i] = new Array(8);
+        }
+        for (i = 0; i < 8; i++) {
+            for (j = 0; j < 8; j++) {
+                aiValue[i][j] = 0;
+            }
+        }
+
+        var astrStatus = new Array(8);
+        for (i = 0; i < 8; i++) {
+            astrStatus[i] = new Array(8);
+        }
+        for (i = 0; i < 8; i++) {
+            for (j = 0; j < 8; j++) {
+                astrStatus[i][j] = "c";
+            }
+        }
+
+        var bOver = new Boolean(false);
+        var iRow, iCol;
+
+        function vInit() {
+            var strHTML, i, j;
+            strHTML = "<table><tr><td colspan='8'> Minesweeper </td></tr>";
+            for (i = 0; i < 8; i++) {
+                strHTML += "<tr>"
+                for (j = 0; j < 8; j++) {
+                    strHTML += "<td>";
+                    strHTML += "<img src = 'unclickedSquare.png' id='square" + i + "," + j + "'"
+                        + " onmousedown='vRightClick(" + i + ", " + j + ")'"
+                        + " onclick='vClick(" + i + ", " + j + ")' />";
+                    strHTML += "</td>";
+                }
+                strHTML += "</tr>";
+            }
+            strHTML += "<tr><td colspan=8><input type='button' id='btnClick'"
+                + " value='New Game' onclick='vNewGame()'/></td ></tr >"
+                + "<tr><td colspan='8'><textarea readonly='readonly' id='taOut'"
+                + " cols='23' rows='9' ></textarea ></td ></tr ></table > ";
+            frmMinesweeper.innerHTML = strHTML;
+
+            var iBombRow, iBombCol;
+            for (i = 0; i < 8; i++) {
+                iBombRow = Math.floor(Math.random() * 8);
+                iBombCol = Math.floor(Math.random() * 8);
+                if (aiValue[iBombRow][iBombCol] == 9) {
+                    do {
+                        iBombRow = Math.floor(Math.random() * 8);
+                        iBombCol = Math.floor(Math.random() * 8);
+                    } while (aiValue[iBombRow][iBombCol] == 9)
+                    aiValue[iBombRow][iBombCol] = 9;
+                }
+                else {
+                    aiValue[iBombRow][iBombCol] = 9;
+                }
+            }
+
+            for (i = 0; i < 8; i++) {
+                for (j = 0; j < 8; j++) {
+                    if (i != 0 && aiValue[i][j] != 9 && aiValue[i - 1][j] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (i != 0 && j != 0 && aiValue[i][j] != 9 && aiValue[i - 1][j - 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (i != 0 && j != 7 &&  aiValue[i][j] != 9 && aiValue[i - 1][j + 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (j != 7 && aiValue[i][j] != 9 && aiValue[i][j + 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (j != 0 && aiValue[i][j] != 9 && aiValue[i][j - 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (i != 7 && aiValue[i][j] != 9 && aiValue[i + 1][j] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (i != 7 && j != 7 && aiValue[i][j] != 9 && aiValue[i + 1][j + 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                    if (i != 7 && j != 0 && aiValue[i][j] != 9 && aiValue[i + 1][j - 1] == 9) {
+                        aiValue[i][j]++;
+                    }
+                }
+            }
+        }
+
+        function vNewGame() {
+            document.getElementById('taOut').value = "";
+            for (i = 0; i < 8; i++) {
+                for (j = 0; j < 8; j++) {
+                    aiValue[i][j] = 0;
+                }
+            }
+            for (i = 0; i < 8; i++) {
+                for (j = 0; j < 8; j++) {
+                    astrStatus[i][j] = "c";
+                }
+            }
+            vInit();
+        }
+
+        function vClick(iRow, iCol) {
+            astrStatus[iRow][iCol] = 'o';
+            var strID = "square" + iRow + "," + iCol;
+            
+            if (aiValue[iRow][iCol] == 9) {
+                document.getElementById('taOut').value = "Game Over!\n\nYou lose!";
+                document.getElementById(strID).src = 'bombclickSquare.png';
+                bOver = true;
+                vOpenAll();
+            }
+            else {
+                document.getElementById(strID).src = aiValue[iRow][iCol] + 'Square.png';
+                if (aiValue[iRow][iCol] == 0) {
+                    vZeroes(iRow, iCol);
+                }
+            }
+            vCheckWin();
+        }
+
+        function vZeroes(iRow, iCol) {
+            if (iRow != 0 && aiValue[iRow - 1][iCol] != 9 && astrStatus[iRow - 1][iCol] != "o" && astrStatus[iRow - 1][iCol] != "f") {
+                vClick(iRow - 1, iCol);
+            }
+            if (iRow != 0 && iCol != 0 && aiValue[iRow - 1][iCol - 1] != 9 && astrStatus[iRow - 1][iCol - 1] != "o" && astrStatus[iRow - 1][iCol - 1] != "f") {
+                vClick(iRow - 1, iCol - 1);
+            }
+            if (iRow != 0 && iCol != 7 && aiValue[iRow - 1][iCol + 1] != 9 && astrStatus[iRow - 1][iCol + 1] != "o" && astrStatus[iRow - 1][iCol + 1] != "f") {
+                vClick(iRow - 1, iCol + 1);
+            }
+            if (iCol != 7 && aiValue[iRow][iCol + 1] != 9 && astrStatus[iRow][iCol + 1] != "o" && astrStatus[iRow][iCol + 1] != "f") {
+                vClick(iRow, iCol + 1);
+            }
+            if (iCol != 0 && aiValue[iRow][iCol - 1] != 9 && astrStatus[iRow][iCol - 1] != "o" && astrStatus[iRow][iCol - 1] != "f") {
+                vClick(iRow, iCol - 1);
+            }
+            if (iRow != 7 && aiValue[iRow + 1][iCol] != 9 && astrStatus[iRow + 1][iCol] != "o" && astrStatus[iRow + 1][iCol] != "f") {
+                vClick(iRow + 1, iCol);
+            }
+            if (iRow != 7 && iCol != 7 && aiValue[iRow + 1][iCol + 1] != 9 && astrStatus[iRow + 1][iCol + 1] != "o" && astrStatus[iRow + 1][iCol + 1] != "f") {
+                vClick(iRow + 1, iCol + 1);
+            }
+            if (iRow != 7 && iCol != 0 && aiValue[iRow + 1][iCol - 1] != 9 && astrStatus[iRow + 1][iCol - 1] != "o" && astrStatus[iRow + 1][iCol - 1] != "f") {
+                vClick(iRow + 1, iCol - 1);
+            }
+        }
+
+        function vOpenAll() {
+            var k, m;
+            for (k = 0; k < 8; k++) {
+                for (m = 0; m < 8; m++) {
+                    if (astrStatus[k][m] != "o") {
+                        vClick(k, m);
+                    }
+                }
+            }
+        }
+
+        function vRightClick(iRow, iCol, e) {
+            if (blsRightButtonClicked(e)) {
+                astrStatus[iRow][iCol] = 'f';
+                var strID = "square" + iRow + "," + iCol;
+                document.getElementById(strID).src = 'flaggedSquare.png';
+            }
+            vCheckWin();
+        }
+
+        function blsRightButtonClicked(e) {
+            var rightclick = false;
+            e = e || window.event;
+            if (e.which) {
+                rightclick = (e.which == 3);
+            }
+            else if (e.button) {
+                rightclick = (e.button == 2);
+            }
+            return rightclick;
+        }
+
+        function vCheckWin() {
+            var iCount = 0;
+            for (i = 0; i < 8; i++) {
+                for (j = 0; j < 8; j++) {
+                    if (astrStatus[i][j] == "c") {
+                        iCount = iCount + 9;
+                    }
+                    if (astrStatus[i][j] == "f" && aiValue[i][j] == 9) {
+                        iCount++;
+                    }
+                }
+            }
+            if (iCount == 8) {
+                document.getElementById('taOut').value = "You Win!";
+            }
+        }
+    </script>
+</head>
+<body onload="vInit()" oncontextmenu="return false">
+    <form id="frmMinesweeper">
+    </form>
+</body>
+</html>

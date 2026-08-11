@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Rotating Boxes </title>
+    <style type="text/css">
+        td{
+            text-align:center;
+            justify-content:center
+        }
+        input.btn{
+            text-align:center
+        }
+    </style>
+    <script type="text/javascript">
+        function vCounter()
+        {
+            var strTopLeft = txtTopLeft.value;
+            var strTopRight = txtTopRight.value;
+            var strBottomRight = txtBottomRight.value;
+            var strBottomLeft = txtBottomLeft.value;
+
+            document.getElementById('txtTopLeft').value = strTopRight;
+            document.getElementById('txtTopRight').value = strBottomRight;
+            document.getElementById('txtBottomRight').value = strBottomLeft;
+            document.getElementById('txtBottomLeft').value = strTopLeft
+        }
+        function vClock()
+        {
+            var strTopLeft = txtTopLeft.value;
+            var strTopRight = txtTopRight.value;
+            var strBottomRight = txtBottomRight.value;
+            var strBottomLeft = txtBottomLeft.value;
+
+            document.getElementById('txtTopLeft').value = strBottomLeft;
+            document.getElementById('txtBottomLeft').value = strBottomRight;
+            document.getElementById('txtBottomRight').value = strTopRight;
+            document.getElementById('txtTopRight').value = strTopLeft
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table style="background-color:maroon">
+            <tr>
+                <td>
+                    <table style="background-color:bisque">
+                        <tr>
+                            <td colspan="2"> Rotating Boxes </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="txtTopLeft" value="a" />
+                            </td>
+                            <td>
+                                <input type="text" id="txtTopRight" value="b" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="txtBottomLeft" value="d" />
+                            </td>
+                            <td>
+                                <input type="text" id="txtBottomRight" value="c" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="btn" type="button" id="btnClock" value="Clockwise" onclick="vClock()" />
+                            </td>
+                            <td>
+                                <input class="btn" type="button" id="btnCounter" value="Counter Clockwise" onclick="vCounter()" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

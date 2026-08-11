@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Friday </title>
+    <script>
+        function vMessage() {
+            document.getElementById('txtMess1').value = 'Welcome to ' + document.getElementById('txtClass1').value + ' , ' + document.getElementById('txtName1').value + '!'
+        }
+        function vMove() {
+            var strBox1 = txt1.value;
+            var strBox2 = document.getElementById('txt2').value;
+            document.getElementById('txt2').value = strBox1;
+            document.getElementById('txt1').value = strBox2
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> Class </td>
+            <td>
+                <form>
+                    <input type="text" id="txtClass1" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td>
+                <form>
+                    <input type="text" id="txtName1" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <form>
+                    <input type="button" value="Click!" 
+                           onclick="vMessage()" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td> Message </td>
+            <td>
+                <form>
+                    <input type="text" id="txtMess1" readonly="readonly"/>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td> Box 1 </td>
+            <td>
+                <form>
+                    <input type="text" id="txt1" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td> Box 2 </td>
+            <td>
+                <form>
+                    <input type="text" id="txt2" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <form>
+                    <input type="button" value="Click" id="btnBoxes" onclick="vMove()" />
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

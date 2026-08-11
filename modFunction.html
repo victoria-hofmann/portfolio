@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Monday </title>
+    <style type="text/css">
+        td {
+            text-align:center
+        }
+    </style>
+    <script type="text/javascript">
+        function vConvert() {
+            var iInput = document.getElementById('txtInches').value;
+            if (isNaN(iInput)) {
+                document.getElementById('taOut').value = "numbers please";
+            }
+            else {
+                iInput = parseInt(iInput);
+                var iInches;
+                var iFeet;
+                iInches = iInput % 12;
+                iFeet = (iInput - iInches) / 12;
+                document.getElementById('txtOut').value = iFeet + " feet, " + iInches +" inches"
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="frmMods">
+        <table style="margin-left:auto; margin-right:auto">
+            <tr>
+                <td colspan="2"> Conversion Program </td>
+            </tr>
+            <tr>
+                <td> Inches </td>
+                <td>
+                    <input type="text" id="txtInches" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="btnConvert" value="Convert" onclick="vConvert()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txtOut" readonly="readonly" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

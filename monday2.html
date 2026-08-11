@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Random Numbers </title>
+    <style type="text/css">
+        td {
+            text-align:center;
+        }
+    </style>
+    <script type="text/javascript">
+        var iNum = Math.floor(Math.random() * 10) + 1;
+        var iSuccess = 0;
+        function vCheck() {
+            var iGuess = document.getElementById('txtGuess').value;
+            if (isNaN(iGuess)) {
+                document.getElementById('txtBox').value = "that's not a number my guy";
+            }
+            else {
+                iGuess = parseInt(iGuess);
+                if (iGuess < 1 || iGuess > 10) {
+                    document.getElementById('txtBox').value = "maybe try a number between 1 and 10";
+                }
+                else if (iGuess == iNum) {
+                    document.getElementById('txtBox').value = "you guessed it. good job my dude";
+                    iSuccess = iSuccess + 1;
+                    document.getElementById('txtSuccess').value = iSuccess + " successful guesses"
+                }
+                else if (iGuess < iNum) {
+                    document.getElementById('txtBox').value = "guess a little higher"
+                }
+                else if (iGuess > iNum) {
+                    document.getElementById('txtBox').value = "guess a little lower"
+                }
+            }
+        }
+        function vRefresh() {
+            document.getElementById('txtGuess').value = '';
+            document.getElementById('txtBox').value = '';
+            iNum = Math.floor(Math.random() * 10) + 1;
+        }
+    </script>
+</head>
+<body>
+    <form id="frmGuess">
+        <table style="background-color:lavender; margin-left:auto; margin-right:auto">
+            <tr>
+                <td colspan="2"> Guess the Number </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Between 1 and 10 </td>
+            </tr>
+            <tr>
+                <td> Guess </td>
+                <td>
+                    <input type="text" id="txtGuess" style="width:50px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Check" id="btnCheck" onclick="vCheck()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txtBox" readonly="readonly" style="width:300px"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="New Number" id="btnRefresh" onclick="vRefresh()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txtSuccess" readonly="readonly" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

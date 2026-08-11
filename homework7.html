@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Homework 7 </title>
+    <style type="text/css">
+        td {
+            text-align:center
+        }
+        input.btn {
+            width:60px
+        }
+    </style>
+    <script type="text/javascript">
+        var iLetCount = 0;
+        var iNumCount = 0;
+        function vString(strButton) {
+            strDisplay = document.getElementById('txtDisplay').value;
+            if () {
+                iLetCount = iLetCount + 1;
+                document.getElementById('txtDisplay').value = 
+                    strButton + strDisplay;
+                document.getElementById('txtLetCount').value =
+                    iLetCount
+            }
+            else {
+                iNumCount = iNumCount + 1;
+                document.getElementById('txtDisplay').value = 
+                    strDisplay + strButton;
+                document.getElementById('txtNumCount').value = 
+                    iNumCount
+            }
+
+            document.getElementById('txtDisplay').value = 
+                strDisplay + strButton;
+
+        }
+        function vClear() {
+            document.getElementById('txtDisplay').value = "";
+            document.getElementById('txtLetCount').value = "";
+            document.getElementById('txtNumCount').value = "";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table style="background-color:bisque; border:2px solid black">
+            <tr>
+                <td colspan="2"> Letters and Numbers </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="A" id="btnA" onclick="vString('A')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" value="1" id="btn1" onclick="vString('1')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="B" id="btnB" onclick="vString('B')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" value="2" id="btn2" onclick="vString('2')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="C" id="btnC" onclick="vString('C')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" value="3" id="btn3" onclick="vString('3')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="D" id="btnD" onclick="vString('D')" class="btn" />
+                </td>
+                <td>
+                    <input type="button" value="4" id="btn4" onclick="vString('4')" class="btn" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txtDisplay" readonly="readonly" size="40" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left"> Letter Count </td>
+                <td>
+                    <input type="text" id="txtLetCount" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left"> Number Count </td>
+                <td>
+                    <input type="text" id="txtNumCount" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Clear" id="btnClear" class="btn" onclick="vClear()"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

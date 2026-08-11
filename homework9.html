@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Divisibility </title>
+    <style type="text/css" >
+        td {
+            text-align:center
+        }
+    </style>
+    <script type="text/javascript">
+        var iNumer = document.getElementById('txtNumerator').value;
+        var iDenom = document.getElementById('txtDenominator').value;
+        function vCheck() {
+            if (isNaN(iNumer) || isNaN(iDenom)) {
+                document.getElementById('txtOut').value = "Please enter numbers"
+            }
+            else {
+                iNumer = parseInt(iNumer);
+                iDenom = parseInt(iDenom);
+                var iRem;
+                iRem = iNumer % iDenom;
+                if (iRem == 0) {
+                    document.getElementById('txtOut').value = "Yes!"
+                }
+                else {
+                    document.getElementById('txtOut').value = "No!"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="frmDivisible">
+        <table>
+            <tr>
+                <td> Divisibility </td>
+            </tr>
+            <tr>
+                <td> Check if </td>
+                <td>
+                    <input type="text" id="txtNumerator" />
+                </td>
+            </tr>
+            <tr>
+                <td> is divisible by </td>
+                <td>
+                    <input type="text" id="txtDenominator" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" id="btnCheck" value="Check" onclick="vCheck()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txtOut" readonly="readonly" size="50px"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

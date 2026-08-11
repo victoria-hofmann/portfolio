@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Homework 4 </title>
+    <style type="text/css">
+        td{
+            text-align:center;
+            justify-content:center
+        }
+        input.btn{
+            text-align:center
+        }
+    </style>
+    <!--<script type="text/javascript">
+        function vMove() {
+            document.getElementById('txtTopLeft').value = document.getElementById('txtTopRight').value;
+            document.getElementById('txtTopRight').value = document.getElementById('txtBottomRight').value;
+            document.getElementById('txtBottomRight').value = document.getElementById('txtBottomLeft').value
+        }
+    </script>-->
+</head>
+<body>
+    <table style="background-color:maroon">
+        <tr>
+            <td>
+                <table style="background-color:bisque">
+                    <tr>
+                        <td colspan="2"> Rotating Boxes </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="text" id="txtTopLeft" value="a" readonly="readonly" />
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <input type="text" id="txtTopRight" value="b" readonly="readonly" />
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="text" id="txtBottomLeft" value="c" readonly="readonly" />
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <input type="text" id="txtBottomRight" value="d" readonly="readonly" />
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input class="btn" type="button" id="btnClock" value="Clockwise" />
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <input class="btn" type="button" id="btnCounter" value="Counter Clockwise" onclick="vMove()"/>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

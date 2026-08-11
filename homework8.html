@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Rolling Dice </title>
+    <style type="text/css" >
+        td {
+            text-align:center
+        }
+    </style>
+    <script type="text/javascript">var strCount1 = 0;
+        var iCount2 = parseInt(0);
+        var iCount3 = parseInt(0);
+        var iCount4 = parseInt(0);
+        var iCount5 = parseInt(0);
+        var iCount6 = parseInt(0);
+
+        function vDiceRoll() {
+            var iNum = Math.floor(Math.random() * 6) + 1;
+            if (iNum == 1) {
+                iCount1++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + iCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+            else if (iNum == 2) {
+                iCount2++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + iCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+            else if (iNum == 3) {
+                iCount3++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + iCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+            else if (iNum == 4) {
+                iCount4++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + iCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+            else if (iNum == 5) {
+                iCount5++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + strCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+            else if (iNum == 6) {
+                iCount6++1;
+                document.getElementById('taOut').value =
+                    "You have rolled" + "\n" + iCount1 + " ones" +
+                    "\n" + iCount2 + " twos" + "\n" + iCount3 + " threes" +
+                    "\n" + iCount4 + " fours" + "\n" + iCount5 + " fives" +
+                    "\n" + iCount6 + " sixes";
+            }
+        }
+        </script>
+</head>
+<body>
+    <form id="frmDice">
+        <table>
+            <tr>
+                <td> Rolling Dice </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btnRoll" value="Roll!" onclick="vDiceRoll()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea readonly="readonly" id="taOut"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
