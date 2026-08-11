@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stdfraction", "stdfraction\stdfraction.csproj", "{EDAFA428-4E22-4BE1-BC36-22996E93EDCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDAFA428-4E22-4BE1-BC36-22996E93EDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAFA428-4E22-4BE1-BC36-22996E93EDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAFA428-4E22-4BE1-BC36-22996E93EDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAFA428-4E22-4BE1-BC36-22996E93EDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E3A7C2E-DC35-40CE-8D30-C0780AB7B9E5}
+	EndGlobalSection
+EndGlobal

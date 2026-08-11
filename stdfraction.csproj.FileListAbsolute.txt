@@ -1,0 +1,10 @@
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\bin\Debug\stdfraction.exe.config
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\bin\Debug\stdfraction.exe
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\bin\Debug\stdfraction.pdb
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.Form1.resources
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.Properties.Resources.resources
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.exe
+C:\Users\victoria.hofmann\Desktop\stdfraction\stdfraction\obj\Debug\stdfraction.pdb
