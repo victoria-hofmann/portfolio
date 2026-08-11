@@ -1,0 +1,23 @@
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\bin\Debug\Compounding.exe.config
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\bin\Debug\Compounding.exe
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\bin\Debug\Compounding.pdb
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.Form1.resources
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.Properties.Resources.resources
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.exe
+C:\Users\victoria.hofmann\Desktop\Compounding\Compounding\obj\Debug\Compounding.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.Form1.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.Properties.Resources.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\bin\Debug\Compounding.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\bin\Debug\Compounding.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\bin\Debug\Compounding.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\obj\Debug\Compounding.csproj.CopyComplete
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\bin\Debug\CompoundingMethods.dll
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\Compounding\bin\Debug\CompoundingMethods.pdb

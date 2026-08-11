@@ -1,0 +1,10 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\bin\Debug\CompoundingKernel.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\bin\Debug\CompoundingKernel.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\bin\Debug\CompoundingKernel.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\bin\Debug\IPCMessages.dll
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\bin\Debug\IPCMessages.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\obj\Debug\CompoundingKernel.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\obj\Debug\CompoundingKernel.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\obj\Debug\CompoundingKernel.csproj.CopyComplete
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\obj\Debug\CompoundingKernel.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingKernel\obj\Debug\CompoundingKernel.pdb

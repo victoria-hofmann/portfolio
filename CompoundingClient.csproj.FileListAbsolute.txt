@@ -1,0 +1,16 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingTwo.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingTwo.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingTwo.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingKernel.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\IPCMessages.dll
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingKernel.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\CompoundingKernel.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\bin\Debug\IPCMessages.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingClient.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingTwo.Form1.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingTwo.Properties.Resources.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingClient.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingClient.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingClient.csproj.CopyComplete
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingTwo.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\CompoundingTwo\CompoundingTwo\obj\Debug\CompoundingTwo.pdb

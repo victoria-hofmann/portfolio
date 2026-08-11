@@ -1,0 +1,6 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\bin\Debug\CompoundingMethods.dll
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\bin\Debug\CompoundingMethods.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\obj\Debug\CompoundingMethods.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\obj\Debug\CompoundingMethods.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\obj\Debug\CompoundingMethods.dll
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Compounding\CompoundingMethods\obj\Debug\CompoundingMethods.pdb
