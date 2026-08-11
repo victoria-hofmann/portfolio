@@ -1,0 +1,11 @@
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\bin\Debug\Chatter.exe.config
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\bin\Debug\Chatter.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\bin\Debug\Chatter.pdb
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.csproj.AssemblyReference.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.GetName.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.MainForm.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.Properties.Resources.resources
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.csproj.GenerateResource.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.csproj.CoreCompileInputs.cache
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.exe
+C:\Users\victoria.hofmann\Documents\Visual Studio 2019\Projects\CSCE344\Chatter\Chatter\obj\Debug\Chatter.pdb
